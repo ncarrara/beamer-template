@@ -1,0 +1,85 @@
+\documentclass{beamer}
+\usetheme[secheader]{Boadilla}
+
+\defbeamertemplate*{footline}{Boadilla}
+{
+   \leavevmode%
+   \hbox{%
+%   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{author in head/foot}%
+%     \usebeamerfont{author in head/foot}\insertshortauthor~~(\insertshortinstitute)
+%   \end{beamercolorbox}%
+%   \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
+%     \usebeamerfont{title in head/foot}\insertshorttitle
+%   \end{beamercolorbox}%
+   \begin{beamercolorbox}[wd=1\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+%     \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+     \insertframenumber{}\hspace*{2ex}
+   \end{beamercolorbox}}%
+   \vskip0pt%
+}
+
+
+\usepackage{comment}
+% wow this is a hack that lets you have more definitions in latex.
+% see http://www.tex.ac.uk/cgi-bin/texfaq2html?label=noroom
+\usepackage{natbib}
+\usepackage{etex}
+\usepackage{pgffor}
+\usepackage[utf8]{inputenc}
+%\usepackage[cyr]{aeguill}
+\reserveinserts{28}
+\usepackage{tikz}
+\usepackage[customcolors]{hf-tikz}
+%\usepackage[utf8]{inputenc}
+%\mode<presentation>{\usetheme{Caltech}}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{multimedia}
+\usepackage{color}
+\usepackage{esint}
+\usepackage{stmaryrd}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[squaren]{SIunits}
+\usepackage{graphicx}
+\usepackage{diagbox}
+\usepackage{pdfpages}
+\usepackage{dsfont}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+\usepackage{subfig}
+
+\graphicspath{{./img/}}
+
+\newcommand{\cplus}{\colorbox{green}{($+$)} }
+\newcommand{\cmoins}{\colorbox{red}{($-$)} }
+\newcommand{\cmean}{\colorbox{yellow}{($\pm$)}}
+
+\newcommand{\mathcolorbox}[2]{\colorbox{#1}{$\displaystyle #2$}}
+
+\input{mathdef.tex}
+
+
+
+\beamertemplatenavigationsymbolsempty
+
+\author[shortname]{
+    Nicolas Carrara  }
+\institute[shortinst]{University of Toronto}
+
+\title[]{Title.}
+\date{March 19, 2020}
+\begin{document}
+    \begin{frame}
+        \maketitle
+        \centering
+    \end{frame}
+
+\end{document}
+
